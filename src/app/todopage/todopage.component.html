@@ -1,0 +1,60 @@
+<h1>User Details</h1>
+
+<div class="alert alert-warning" *ngIf='message'>{{message}}</div>
+
+<div class="container">
+
+    <div class="row" style="float :right">
+        <button (click)="adduser()" class="btn btn-success" >Add</button>
+    </div>
+
+<br>
+
+<br>
+
+
+<br>
+
+
+<br> 
+
+<table class="table">
+<thead>
+  <tr>
+      <th>FIRSTNAME</th>
+      <th>LASTNAME</th>
+      <th>PASSWORD</th>
+    <th>EID</th>
+    <th>EMAIL</th>
+    <th>DEPT</th>
+    <th>DOMAIN</th>
+    <th>COLLEGE</th>
+    <th>ACTIONS</th>
+    <th>ACTTION2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let todo of todos">
+    
+    <td>{{todo.firstname}}</td>
+    <td>{{todo.lastname}}</td>
+    <td>{{todo.password}}</td>
+    <td>{{todo.eid}}</td>
+    <td>{{todo.email}}</td>
+    <td>{{todo.dept}}</td>
+    <td>{{todo.domain}}</td>
+    <td>{{todo.college}}</td>
+    <td><button (click)="UpdateUser(todo.email) "class="btn btn-success ">Update</button></td>
+    <td><button (click)="deleteUser(todo.email) "class="btn btn-warning ">Delete</button></td>
+
+  </tr>
+
+  <!-- } -->
+</tbody> 
+
+</table>
+
+</div>
+
+
+  

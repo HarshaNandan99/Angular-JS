@@ -1,0 +1,33 @@
+
+
+<div class="row list disable-text-selection" data-check-all="checkAll">    
+  <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4"*ngFor="let templ of temps">
+    <div class="card">
+        <div class="position-relative">
+            <a href="Pages.Details.html"><img src="/assets/{{templ.eid}}.jpeg"  alt="Card image cap"></a>
+            <span class="notify-badge">EID: {{templ.eid}}</span>
+            <span class="notify-badge-2">Domain: {{templ.domain}}</span>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-2">
+                    <div class="custom-control custom-checkbox pl-1">
+                        <label class="custom-control custom-checkbox  mb-0">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-label"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <a href="Pages.Details.html">
+                        <p class="list-item-heading mb-4">{{templ.firstname}}</p>
+                    </a>
+                    <footer>
+                        <p class="text-muted text-small mb-0 font-weight-light">{{templ.email}}</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+

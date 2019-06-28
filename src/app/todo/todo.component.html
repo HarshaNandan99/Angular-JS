@@ -1,0 +1,13 @@
+<div class="container">
+
+  Firstname:<input type="text" [(ngModel)]="todo.firstname" class="form-control" name="firstname" required="required">
+  Lastname:<input type="text" [(ngModel)]="todo.lastname" class="form-control" name="lastname" required="required">
+  Password :<input type="text" [(ngModel)]="todo.password"  class="form-control" name="password" required="required">
+  Eid:<input type="text" [(ngModel)]="todo.eid"  class="form-control" name="eid" required="required">
+  Email:<input type="text" [(ngModel)]="todo.email"  class="form-control" name="email" required="required">
+  Department:<input type="text" [(ngModel)]="todo.dept"  class="form-control" name="dept" required="required">
+  Domain:<input type="text" [(ngModel)]="todo.domain"  class="form-control" name="domain" required="required">
+  College:<input type="text" [(ngModel)]="todo.college"  class="form-control" name="college" required="required">
+  
+  <button class="btn btn-success" (click)="saveTodo()">Save</button>
+</div>
